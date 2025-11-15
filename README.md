@@ -26,22 +26,25 @@ Wallcloud_PW/
 
 #Installation
 Clone the repository:
-
+<pre>
 git clone https://github.com/Wesley1012/Walldoud_Playwright.git
 cd Walldoud_PW
+</pre>
 
 #Create virtual environment:
-
+<pre>
 python -m venv .venv
 source .venv/bin/activate  # Linux/Mac
 
 .venv\Scripts\activate     # Windows
+</pre>
 
 #Install dependencies:
-
+<pre>
 pip install -r requirements.txt
 playwright install
-
+</pre>
 #Running Tests
-
+<pre>
 python3 -m pytest -v tests/
+</pre>
