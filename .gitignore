@@ -1,0 +1,8 @@
+__pycache__
+*.py[cod]
+*$py.class
+.idea
+other.py
+.venv
+test_data/credentials.py
+.env
