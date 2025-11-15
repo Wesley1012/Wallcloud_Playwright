@@ -6,21 +6,22 @@ https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=whit
 Automated test suite for Wallcloud web application using Playwright and Pytest.
 
 📁 Project Structure
-text
+<pre>
 Wallcloud_PW/
-├── pages/ # Page Object Model (POM)
-│ ├── basepage.py # Base page class
-│ ├── authpage.py # Authentication page
-│ └── mainpage.py # Main page
-├── tests/ # Test scenarios
-│ ├── test_login_page.py
-│ ├── test_signup_page.py
-│ └── test_main_page.py
-├── conftest.py # Pytest fixtures
-├── locators.py # Element locators
-├── pytest.ini # Pytest configuration
-├── requirements.txt # Python dependencies
+├── pages/                 # Page Object Model (POM)
+│   ├── basepage.py       # Base page class
+│   ├── authpage.py       # Authentication page
+│   └── mainpage.py       # Main page
+├── tests/                # Test scenarios
+│   ├── test_login_page.py
+│   ├── test_signup_page.py
+│   └── test_main_page.py
+├── conftest.py           # Pytest fixtures
+├── locators.py           # Element locators
+├── pytest.ini            # Pytest configuration
+├── requirements.txt      # Python dependencies
 └── .gitignore
+</pre>
 
 Installation
 Clone the repository:
