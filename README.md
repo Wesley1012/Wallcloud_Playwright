@@ -6,7 +6,7 @@
 
 Automated test suite for Wallcloud web application using Playwright and Pytest.
 
-📁 Project Structure
+#📁 Project Structure
 <pre>
 Wallcloud_PW/
 ├── pages/                 # Page Object Model (POM)
@@ -24,24 +24,24 @@ Wallcloud_PW/
 └── .gitignore
 </pre>
 
-Installation
+#Installation
 Clone the repository:
 
 git clone https://github.com/Wesley1012/Walldoud_Playwright.git
 cd Walldoud_PW
 
-Create virtual environment:
+#Create virtual environment:
 
 python -m venv .venv
 source .venv/bin/activate  # Linux/Mac
 
 .venv\Scripts\activate     # Windows
 
-Install dependencies:
+#Install dependencies:
 
 pip install -r requirements.txt
 playwright install
 
-Running Tests
+#Running Tests
 
 python3 -m pytest -v tests/
