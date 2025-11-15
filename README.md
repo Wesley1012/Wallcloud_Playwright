@@ -1,7 +1,8 @@
-Walldoud UI Automation
-https://img.shields.io/badge/Playwright-2EAD33?style=flat&logo=Playwright&logoColor=white
-https://img.shields.io/badge/Pytest-0A9EDC?style=flat&logo=pytest&logoColor=white
-https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white
+# Wallcloud UI Automation
+
+[![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat&logo=Playwright&logoColor=white)](https://playwright.dev/)
+[![Pytest](https://img.shields.io/badge/Pytest-0A9EDC?style=flat&logo=pytest&logoColor=white)](https://docs.pytest.org/)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)](https://www.python.org/)
 
 Automated test suite for Wallcloud web application using Playwright and Pytest.
 
