@@ -7,19 +7,19 @@ Automated test suite for Wallcloud web application using Playwright and Pytest.
 
 📁 Project Structure
 text
-Walldoud_PW/
-├── pages/                 # Page Object Model (POM)
-│   ├── basepage.py       # Base page class
-│   ├── authpage.py       # Authentication page
-│   └── mainpage.py       # Main page
-├── tests/                # Test scenarios
-│   ├── test_login_page.py
-│   ├── test_signup_page.py
-│   └── test_main_page.py
-├── conftest.py           # Pytest fixtures
-├── locators.py           # Element locators
-├── pytest.ini            # Pytest configuration
-├── requirements.txt      # Python dependencies
+Wallcloud_PW/
+├── pages/ # Page Object Model (POM)
+│ ├── basepage.py # Base page class
+│ ├── authpage.py # Authentication page
+│ └── mainpage.py # Main page
+├── tests/ # Test scenarios
+│ ├── test_login_page.py
+│ ├── test_signup_page.py
+│ └── test_main_page.py
+├── conftest.py # Pytest fixtures
+├── locators.py # Element locators
+├── pytest.ini # Pytest configuration
+├── requirements.txt # Python dependencies
 └── .gitignore
 
 Installation
