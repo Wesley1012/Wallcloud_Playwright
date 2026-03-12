@@ -1,4 +1,4 @@
-# Walldoud UI Automation 🤖
+# Wallcloud UI Automation
 
 [![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat&logo=Playwright&logoColor=white)](https://playwright.dev/)
 [![Pytest](https://img.shields.io/badge/Pytest-0A9EDC?style=flat&logo=pytest&logoColor=white)](https://docs.pytest.org/)
@@ -30,6 +30,7 @@ Walldoud_PW/
 ├── requirements.txt       # Что нужно поставить
 └── .gitignore
 
+
 ## Установка
 
 # Клонировать репозиторий:
@@ -37,12 +38,14 @@ Walldoud_PW/
 git clone https://github.com/Wesley1012/Walldoud_Playwright.git
 cd Walldoud_PW
 
+
 # Создать виртуальное окружение:
 
 python -m venv .venv
 source .venv/bin/activate  # Linux/Mac
 
 .venv\Scripts\activate     # Windows
+
 
 # Установить зависимости:
 
@@ -90,3 +93,4 @@ allure serve allure-results # или npx allure serve allure-results в моём
 
 📄 License
 MIT License — free use and distribution. See LICENSE file for details.
+
