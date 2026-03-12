@@ -14,46 +14,56 @@ class MainPageLocators:
         'More List': "#more-list",
         'Search Button': "button.btn.go-search",
         'Search Bar': "[name='q']",
-        'Color Search': "//div[@class='color_pallet tooltips']/span[@class='msr']",
+        'Color Search': "div[data-original-title='Search by color'] .msr",  #"//div[@class='color_pallet tooltips']/span[@class='msr']",
         'Language Button': "#lang_list",
         'Login Button': "//li[@class='dropdown m-profile']//span[@class='user-name']"
+    }
+
+    MENU_DROPDOWNS = {
+        "Categories List": "#g_0.dropdown-menu",
+        "Resolutions List": "#r_list.dropdown-menu",
+        "Top List": "#top-list .dropdown-menu",
+        "More List": "#more-list .dropdown-menu",
+        "Color Search": ".minicolors-panel.minicolors-slider-wheel.minicolors-with-swatches",
+        "Language Button": "#lang_list.dropdown-menu",
+        "Login Button": ".m-profile .dropdown-menu",
     }
 
     # Categories List
     CATEGORIES = {
         "3d": "//li[@class='3d']",
-        "Hi-Tech": "li.hi-tech",
-        "Weapon": "li.weapon",
-        "Abstract": "li.abstract",
-        "Aircraft": "li.aircraft",
-        "Cars": "li.cars",
-        "Anime": "li.anime",
-        "Architecture": "li.architecture",
-        "Cities": "li.cities",
-        "Graphics": "li.graphics",
-        "Food": "li.food",
-        "Animals": "li.animals",
-        "Games": "li.games",
-        "Illustration": "li.illustration",
-        "Interiors": "li.interiors",
-        "Computers": "li.computers",
-        "Ships": "li.ships",
-        "Space": "li.space",
-        "Love": "li.love",
-        "People": "li.people",
+        "Hi-Tech": "li.hi-tech a",
+        "Weapon": "li.weapon a",
+        "Abstract": "li.abstract a",
+        "Aircraft": "li.aircraft a",
+        "Cars": "li.cars a",
+        "Anime": "li.anime a",
+        "Architecture": "li.architecture a",
+        "Cities": "li.cities a",
+        "Graphics": "li.graphics a",
+        "Food": "li.food a",
+        "Animals": "li.animals a",
+        "Games": "li.games a",
+        "Illustration": "li.illustration a",
+        "Interiors": "li.interiors a",
+        "Computers": "li.computers a",
+        "Ships": "li.ships a",
+        "Space": "li.space a",
+        "Love": "li.love a",
+        "People": "li.people a",
         "Macro": "li.macro",
-        "Minimalism": "li.minimalism",
-        "Motorcycles": "li.motorcycles",
-        "Music": "li.music",
-        "Multiplicatios": "li.multiplicatios",
-        "Holidays": "li.holidays",
-        "Funny": "li.funny",
-        "Nature": "li.nature",
-        "Others": "li.others",
+        "Minimalism": "li.minimalism a",
+        "Motorcycles": "li.motorcycles a",
+        "Music": "li.music a",
+        "Multiplicatios": "li.multiplicatios a",
+        "Holidays": "li.holidays a",
+        "Funny": "li.funny a",
+        "Nature": "li.nature a",
+        "Others": "li.others a",
         "Sport": "li.sport",
-        "Textures": "li.textures",
-        "Fantasy": "li.fantasy",
-        "Films": "li.films"
+        "Textures": "li.textures a",
+        "Fantasy": "li.fantasy a",
+        "Films": "li.films a"
     }
 
     # Resolution list
@@ -164,18 +174,18 @@ class MainPageLocators:
 
     # Top list
     TOP_LIST = {
-        "Download": ".dropdown-menu a[href*='download']",
-        "View": ".dropdown-menu a[href*='view']",
-        "Favourite": ".dropdown-menu a[href*='favourite']",
-        "Rating": ".dropdown-menu a[href*='rating']"
+        "Download": "a[href*='download']",
+        "View": "a[href*='view']",
+        "Favourite": "a[href*='favourite']",
+        "Rating": "a[href*='rating']"
     }
 
     # More List (остаются прежними)
     MORE_LIST = {
-        "About-us": "#more-list a[href='https://wallscloud.net/en/about-us']",
-        "Tags": "#more-list a[href='https://wallscloud.net/en/tags']",
-        "Contact": "#more-list a[href='https://wallscloud.net/en/contact']",
-        "Android_App": "#more-list li.app_link > a"
+        "About-us": "a.m-link[href*='about-us']",
+        "Tags": "a.m-link[href*='tags']",
+        "Contact": "a.m-link[href*='contact']",
+        "Android_App": "a.m-link[href*='t.me']"
     }
 
     # Color buttons

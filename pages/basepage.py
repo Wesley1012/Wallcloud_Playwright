@@ -1,4 +1,5 @@
 from playwright.sync_api import Page
+import allure
 
 class BasePage:
     def __init__(self, page: Page, url=None):
@@ -12,11 +13,13 @@ class BasePage:
 
     def find_locator(self, selector, timeout= 30000):
         locator = self.page.locator(selector)
-        locator.wait_for(state="attached", timeout=timeout)
+        locator.wait_for(state="visible", timeout=timeout)
         return locator
 
-    def click(self, selector, timeout=30000):
-        self.page.locator(selector).click(timeout=timeout, force=True)
+    def click_selector(self, selector, timeout=10000):
+        element = self.page.locator(selector)
+        element.wait_for(state="visible", timeout=5000)
+        element.click(timeout=timeout, force=True)
         return self
 
     def fill(self, selector, text, timeout=30000):

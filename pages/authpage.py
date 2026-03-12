@@ -1,4 +1,5 @@
 from pages.basepage import BasePage
+import allure
 
 
 class AuthPage(BasePage):
@@ -23,35 +24,42 @@ class AuthPage(BasePage):
     FORGOT_PASS_BTN = 'a[href="https://wallscloud.net/ru/account/reset-password"]'
     REMEMBER_CHECKBOX = '#login-remember'
 
-
+    @allure.step("Открыть страницу логина")
     def open_login_page(self):
         self.navigate("/login")
         return self
 
+    @allure.step("Открыть страницу регистрации")
     def open_signup_page(self):
         self.navigate("/signup")
         return self
 
+    @allure.step("Ввести емаил {text}")
     def fill_email(self, text=''):
-        self.page.fill(self.EMAIL, text)
+        self.fill(self.EMAIL, text)
         return self
 
+    @allure.step("Ввести имя {text}")
     def fill_name(self, text=''):
-        self.page.fill(self.NAME, text)
+        self.fill(self.NAME, text)
         return self
 
+    @allure.step("Ввести пароль {text}")
     def fill_password(self, text=''):
-        self.page.fill(self.PASSWORD, text)
+        self.fill(self.PASSWORD, text)
         return self
 
+    @allure.step("Ввести второй пароль {text}")
     def fill_re_password(self, text=''):
-        self.page.fill(self.RE_PASSWORD, text)
+        self.fill(self.RE_PASSWORD, text)
         return self
 
+    @allure.step("Нажать кнопку 'Войти'")
     def submit_btn(self):
         self.page.click(self.SUBMIT_BTN)
         return self
 
+    @allure.step("Пройти капчу (при вводе валидных данных необходимо ручное прохождение)")
     def click_recaptcha(self):
         try:
             recaptcha_frame = self.page.frame_locator("iframe[title*='reCAPTCHA']")
@@ -62,11 +70,12 @@ class AuthPage(BasePage):
             print(f"Log_info: reCAPTCHA v2 with challenge don't complete, needed manual input")
 
             return self
-
+    @allure.step("Кликнуть 'Забыл пароль?'")
     def click_forgot_pass(self):
         self.page.click(self.FORGOT_PASS_BTN)
         return self
 
+    @allure.step("Кликнуть 'Нет аккаунта?'")
     def click_no_account_btn(self):
         self.page.click(self.NO_ACCOUNT_BTN)
         return self

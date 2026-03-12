@@ -6,3 +6,5 @@ other.py
 .venv
 test_data/credentials.py
 .env
+allure-results/
+screenshots/
