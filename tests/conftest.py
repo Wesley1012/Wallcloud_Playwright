@@ -8,7 +8,7 @@ import pytest
 def browser():
     playwright = sync_playwright().start()
 
-    browser = playwright.chromium.launch(
+    browser = playwright.firefox.launch(
         headless=False,
         # slow_mo=100,  # Замедление в ms для визуализации
         args=["--no-sandbox", "--disable-dev-shm-usage"]
@@ -57,9 +57,9 @@ def auto_screenshot(page: Page, request):
 
         try:
             page.screenshot(path=screenshot_path, full_page=True)
-            print(f"\n📸 Скриншот падения: {screenshot_path}")
+            print(f"\nСкриншот падения: {screenshot_path}")
         except Exception as e:
-            print(f"\n❌ Не удалось создать скриншот: {e}")
+            print(f"\nНе удалось создать скриншот: {e}")
 
 
 @pytest.hookimpl(tryfirst=True, hookwrapper=True)
