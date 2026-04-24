@@ -31,15 +31,15 @@ Walldoud_PW/
 └── .gitignore
 
 
-## Установка
+# Установка
 
-# Клонировать репозиторий:
+## Клонировать репозиторий:
 
 git clone https://github.com/Wesley1012/Walldoud_Playwright.git
 cd Walldoud_PW
 
 
-# Создать виртуальное окружение:
+## Создать виртуальное окружение:
 
 python -m venv .venv
 source .venv/bin/activate  # Linux/Mac
@@ -47,7 +47,7 @@ source .venv/bin/activate  # Linux/Mac
 .venv\Scripts\activate     # Windows
 
 
-# Установить зависимости:
+## Установить зависимости:
 
 pip install -r requirements.txt
 playwright install
@@ -61,11 +61,11 @@ brew install allure
 winget install Microsoft.OpenJDK.11 # Windows (через winget)
 scoop install allure # Windows (scoop)
 
-# Запуск тестов
+## Запуск тестов
 
 pytest
 
-# Запуск с генерацией Allure отчёта(addopts уже прописан см. pytest.ini)
+## Запуск с генерацией Allure отчёта(addopts уже прописан см. pytest.ini)
 
 pytest --alluredir=allure-results
 allure serve allure-results # или npx allure serve allure-results в моём случае
@@ -91,6 +91,5 @@ allure serve allure-results # или npx allure serve allure-results в моём
 - Проверка капчи
 - Сообщения об ошибках
 
-📄 License
-MIT License — free use and distribution. See LICENSE file for details.
+
 
